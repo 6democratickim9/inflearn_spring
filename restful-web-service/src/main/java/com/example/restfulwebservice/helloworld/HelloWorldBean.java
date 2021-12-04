@@ -1,4 +1,4 @@
-package com.example.restfulwebservice;
+package com.example.restfulwebservice.helloworld;
 //lombok dependency: bean class를 만들 때 생성자나 toString같은것들을 자동으로 생성해줌
 //우와 정말 사용하지 않을수가 없자나??
 
