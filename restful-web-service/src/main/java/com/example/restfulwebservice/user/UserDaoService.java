@@ -18,16 +18,16 @@ public class UserDaoService {
     public List<User> findAll(){
         return users;
     }
-    public User save(User user){
-        if(user.getId()==null){
-            user.setId(++usersCount);
+    public User save(User user){//전달되어진 user 값 안에
+        if(user.getId()==null){//값이 존재하지 않으면
+            user.setId(++usersCount);//전체 리스트에 usersCount를 더한다 +1후 id값 설정
         }
         users.add(user);
         return user;
     }
-    public User findOne(int id){
-        for(User user: users){
-            if(user.getId()==id){
+    public User findOne(int id){//id값 전달되면
+        for(User user: users){//사용자 목록에서
+            if(user.getId()==id){//id값이 일치하는 것을 찾아 반환
                 return user;
             }
         }
